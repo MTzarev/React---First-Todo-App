@@ -4,7 +4,7 @@ function NewTodoList() {
     const [state, setState] = useState([]);
 
     function addInputHandler(e) {
-        const newState = e.target.value.trim();
+        const newState = e.target.value;
         if (newState.length > 0) {
             setState([...state, { text: newState, done: false }]);
         }
