@@ -8,7 +8,7 @@ function NewTodoList() {
         if (newState.length > 0) {
             setState([...state, { text: newState, done: false }]);
         }
-        e.target.value = ""; // Clear input field
+        e.target.value = "";
     }
 
     function toggleDone(index) {
